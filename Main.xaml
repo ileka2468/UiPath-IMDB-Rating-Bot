@@ -1,0 +1,274 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1794,4496" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="49">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ExcelStuff" sap:VirtualizedContainerService.HintSize="976,4431" sap2010:WorkflowViewState.IdRef="Sequence_12">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="914,4320" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="880,4233" sap2010:WorkflowViewState.IdRef="Sequence_11">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="OutputFilePath" />
+              <Variable x:TypeArguments="x:Boolean" Name="fileExists" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="818,61" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[OutputFilePath]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">C:\Users\Gaming PC\Downloads\MovieRatings.xlsx</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[fileExists]" sap:VirtualizedContainerService.HintSize="818,90" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[OutputFilePath]" PathType="File" />
+            <If Condition="[fileExists]" sap:VirtualizedContainerService.HintSize="818,477" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="334,80" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="C:\Users\Gaming PC\Downloads\MovieRatings.xlsx" />
+              </If.Then>
+              <If.Else>
+                <Sequence sap:VirtualizedContainerService.HintSize="400,201" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="338,90" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="File not found" />
+                </Sequence>
+              </If.Else>
+            </If>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="818,738" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" KeepExcelFileOpen="True" ResizeWindow="None" TemplatePath="C:\Users\Gaming PC\Downloads\MovieRatingTemplate.xlsx" WorkbookPath="C:\Users\Gaming PC\Downloads\MovieRatings.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="createOutput" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,469" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:WriteCellX AutoIncrementRow="True" Cell="[createOutput.Sheet(&quot;Sheet1&quot;).Cell(&quot;A1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[&quot;Movie&quot;]" />
+                    <ueab:WriteCellX AutoIncrementRow="True" Cell="[createOutput.Sheet(&quot;Sheet1&quot;).Cell(&quot;B1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[&quot;Rating&quot;]" />
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="818,2596" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_4" ResizeWindow="None" WorkbookPath="C:\Users\Gaming PC\Downloads\MoviesToRate.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="784,2327" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="722,2216" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_2" Range="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A:A&quot;)]" SaveAfterEachRow="False">
+                      <ueab:ExcelForEachRowX.Body>
+                        <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                          <ActivityAction.Argument1>
+                            <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="Movie" />
+                          </ActivityAction.Argument1>
+                          <ActivityAction.Argument2>
+                            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                          </ActivityAction.Argument2>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="688,2034" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Launch IMDB" sap:VirtualizedContainerService.HintSize="626,1923" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="4534d683-ba80-4ed6-afdf-00161db33aaf" Version="V2">
+                              <uix:NApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="x:Object">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,1706" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                    <Sequence.Variables>
+                                      <Variable x:TypeArguments="x:String" Name="strRating" />
+                                    </Sequence.Variables>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type movie name" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="530,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="4534d683-ba80-4ed6-afdf-00161db33aaf" Text="[Movie(&quot;MovieTitle&quot;)]" Version="V3">
+                                      <uix:NTypeInto.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://www.imdb.com/" DesignTimeRectangle="559, 91, 608, 31" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT suggestion-search'" FullSelectorArgument="&lt;webctrl id='suggestion-search' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='suggestion-search' tag='INPUT' type='text' class='imdb-header-search__input searchTypeahead__input react-autosuggest__input' aaname='' /&gt;" Guid="691ad8aa-a023-4184-a2fc-f323e4dbceef" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAmQAAAAjCAYAAAA60xZBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUOSURBVHhe7dwvs6JQAIbx/Qx+1xMMBoqBQCHcQCEQLAZ2xkowWAgEi8FAIRhuIRgo7x7+qKDcu7p7Z9mdfX4zZ/YCyoLpmcPRb7PZTAwGg8FgMBiM6QZBxmAwGAwGgzHx+Cbr+/fv9T8AAACYAEEGAAAwMYIMAABgYgQZAADAxAgyAACAiRFkAAAAEyPIAAAAJkaQAQAATIwgAwAAmNg/HWTFLtLmUHZbf4tCu2ijv+6yAADAX+ulIKuKrQJnLmNMM+aOr3jC8tiHRm5y6rZ+5qTE7b++3TYmUFZ1uwZKbb36eKh9t8f+h9d7b+/fU7g92lf27RUaV09fFgAA+O89H2RVpsBGiLcp1PZLpTILtTBLxUWz44/7miCz97Qdicoi1rIJr/sgC5SWpcp6FJlWrg1UL7FnuyDIAADAa54PsiZGQmXdZqvUzjdy4rzbrpUqDlvF60Tp8b2Lt5uyOGgbR4q3BxWDDiqVZwedynftk7WS4+WdNvzyTMna7kuPeu+d8BJk7Tkfjw+NB5nneTaotnezXNJhtdDCHls+BFlvu3HUamH0truc4RJk9nPIEq3t55ANbxQAAGDg+SArt/LMQsHuMbJubOR4xoZMqCgK5Tv273Cvc3PsrH3kNI85oyRRHLiaG683k1SHjI2gxdy+39cqfbf7bu8Jo0jR21JmESjr+qYOsoXjyHGD6/9n/N1DXLXGgyxM65m/u1m+ZjbQ7rNB5f40yKQ8dmSCtPtcuvuw1+WH9ppDX049C8eUGQAA+MBLa8je07CJi/nCUxCnysthmhWxDab+bNM51dvl8V111DaKtb8erJQG/dm1NmTCrM23Rr7Won5EeN1V2SaysbM6NltNkIVZF3xWHtvrs68fLcbxIPN3ZTsbtjp0+2177nyZZazi9FyQnRJXxr08tny8j3Ma2JBcqb1qAACAoZeCrFGVytNYgbfQ3MaZE6aq57JsrjWzY064VZZl3dgqdIzCa8FUOhfH6/G1b2SuBy+P+rpNqwmd+xmv6qzy3M1F3a8hawLqo/Vb40HWbDfrxS6L+9vF/M26sl8OsrtrKHfyP7wuAADwv3s9yHqq952C6/qpNnAcP1JUP17sjV3zOLBUFtiIcwPF2xeC7FZzD74syPoR1o+zQzQMsM8eWV7DcSTIRvcBAAC0ng6yfOPKibK79WOVjSwbVVH9uG9sgX9PE0vDx4l1UH0WZO2jw00389SqTgdleZc+XxZk9rz1Y8VlrKT/+PI+wEaDrF3Uf/um5kh8nTY28nxd1/0DAAD0PD9DltczRwsF6W1Rf1Vs5BmjoPshr2atlPG0KbpXVIWSIGoX4TextNQ6b49VRSLfhsxnQdY+6qvXY3UlY8+3sRFVr/uqfWWQXX7Ww/QX+H8aZPXj149+9qJd29ZeZaksXIx+kxMAAKD20iPL8pgMfhjWGEdvSX5bVG//ypO3duH/vH7dXO760B23x2KvWXfW/qhqqCiwoTL4duJjTJ0Pa7lz+x57vvngfF8cZFa9uH8QTqNBdrn3+pqW8tdZt4buor6PpcJV+zk0r7P32nxpFAAAYMSvrSHrLawfV+lcnq8zaQM/fe+46lzqF942Mfs5/HsXDQAA/rDfWtQPAACA30eQAQAATIwgAwAAmBhBBgAAMDGCDAAAYGIEGQAAwMQIMgAAgIkRZAAAABMjyAAAACZGkAEAAEyMIAMAAJjYt9lsJgaDwWAwGAzGVGOmH1450nqerNOXAAAAAElFTkSuQmCC" InformativeScreenshot="19aa947eb90164e67501f0d80a2d1148.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IMDb: Ratings, Reviews, and Where to Watch the Best Movies &amp;amp; TV Shows' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                                      </uix:NTypeInto.Target>
+                                    </uix:NTypeInto>
+                                    <uix:NClick ClickType="Single" DisplayName="Click search button" sap:VirtualizedContainerService.HintSize="530,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4534d683-ba80-4ed6-afdf-00161db33aaf" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://www.imdb.com/" DesignTimeRectangle="988, 140, 24, 24" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'SVG iconContext-magnify'" FullSelectorArgument="&lt;webctrl id='iconContext-magnify' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl id='iconContext-magnify' tag='svg' type='' class='ipc-icon ipc-icon--magnify' aaname='' /&gt;" Guid="3b62ebbb-135b-4289-9daf-23182d8b652c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD8SURBVEhL7ZSxCoMwEED7066OOjq6ujq6+i06ujq6przgFZFLvNAgpfggqDG9l7ucfbmbeYTZ+T3hsiyu73vXNI0risLVde2fp2naV6QRFY7j6CWhwftUgsKjjHvJiOv5XQqqcF3XT0BKqsG8rEkpryrsus60e8mUM7WiCtu2jWYnkBnryrLcZ65RhVVV+UAWWEcHW4kKrRlSESuqkDMh0G1nKDuPZXnsUrraiioE2T2D+3me/fz5OxyGwc9bCQrhGFgbUnqaZtu2/VdxokIgIwLT+hKc71RKLf+xVuml8AokKdKvhZAizSKEszRENiGI9DahhUeYnX8XOvcGBlKvBwUB1TEAAAAASUVORK5CYII=" InformativeScreenshot="f53529e59aaebf675189354c8d4935ce.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IMDb: Ratings, Reviews, and Where to Watch the Best Movies &amp;amp; TV Shows' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NClick ClickType="Single" DisplayName="Click Movie Title" sap:VirtualizedContainerService.HintSize="530,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4534d683-ba80-4ed6-afdf-00161db33aaf" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable Accuracy="0.4" BrowserURL="https://www.imdb.com/find/?q=Titanic&amp;ref_=nv_sr_sm" DesignTimeRectangle="226, 374, 207, 18" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Titanic'" FullSelectorArgument="&lt;webctrl aria-role='button' class='ipc-metadata-list-summary-item__t' parentid='__next' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='button' class='ipc-metadata-list-summary-item__t' parentid='__next' tag='A' type='' aaname='Titanic' check:innerText='Titanic' /&gt;" Guid="8391a553-0bb9-465f-a802-eff47fedc1b3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAANMAAAAWCAYAAABaIqneAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJXSURBVHhe7Zi7juQgEEX3r/sTHDokdEjokNAhISEhIaFDwrvFw4/uac1op5lxS3uPhGTKGBxwVAV/QAjpAmUipBOUiZBOUCZCOrHLFENA+LStSGWgxaw0jPR/gxQMtJphYwsQ8qbsMunbDbdP24K8n+My1L72VS5hDRbWWri4RXqR4HVbf6FN5L3ZZXIiQxbCWskEY9vAk2SEPR5Qc9GK4BzOiSkudbz2vWUSUoR3Ht09JaQzT85MX2QD2dyl7Cu7O0lWCrBzHa+MP8rBQkL0rsko79Z7I1KsJWQOp+jrOFf7G2ltZebjtxL3TXR3tyYh1/DPMiWv67tS5kUs+fmu1XIQq8c8PL4boPbDz7GOUup+nGpzCFvWO//LKv8wnMdLG07fEHIFL8qUAwnB1PHaSYZoKSKYerYaTSjj8kXCmL+7zQj1w32dQVtEyTwpOugmoGlLf5BpdZjKPBOWnJHWCKvrWpOsT8hVvC6T8NWZKYlhKQWYIoFGHXascyxzxLa5HmXKWan0RdIdKflKiegpE7mOH5RphTfTh3LsVZk+ZCpC3oQfk2kr8/KlxNoxM+1X85SJvBldZVL7meW4mDimCJhL7DWZUphrf3Ltqj7/U4ttBy1CLqCPTHassWGEUgZBMpFv1+WDmmGswaxaRskyFQu+J1MRVdXYMMnc84SxXFoMOB+jCPltusgk6QLmLEt+cRcbpNxbpF/nrZv+uzIJ6bjBK22YYHj5QC7miUwvkM9G7XHnWawb+SzWHgm5mL4yEfIfQ5kI6QRlIqQTlImQTlAmQroA/AVSpvmbNiVmIgAAAABJRU5ErkJggg==" InformativeScreenshot="7693be1a80dd636d1dfc7ca6df635882.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Find - IMDb' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target DesignTimeRectangle="226, 370, 705, 59" FriendlyName="'Titanic1997Leonardo DiC…'" FullSelectorArgument="&lt;webctrl class='ipc-metadata-list-summary-item__c' parentid='__next' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='ipc-metadata-list-summary-item__c' parentid='__next' tag='DIV' type='' aaname='' /&gt;" ImageBase64="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" SearchSteps="Selector" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <uix:NGetText DisplayName="Get Text Rating" sap:VirtualizedContainerService.HintSize="530,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="4534d683-ba80-4ed6-afdf-00161db33aaf" TextString="[strRating]" Version="V3">
+                                      <uix:NGetText.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://www.imdb.com/title/tt0120338/?ref_=fn_al_tt_1" DesignTimeRectangle="715, 207, 32, 24" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'7.9'" FullSelectorArgument="&lt;webctrl aaname='7.9' parentid='__next' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='__next' tag='SPAN' type='' class='sc-e457ee34-1 squoh' /&gt;" Guid="cccc5e0f-f124-4e6a-8e22-95c849116f24" InformativeScreenshot="4b14cdf556a177123d2b6bfad478b4a3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Titanic (1997) - IMDb' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                              <uix:Target DesignTimeRectangle="667, 183, 122, 66" FriendlyName="'IMDb RATING7.9/101.2M'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;section&amp;gt;section&amp;gt;div&amp;gt;section&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='3' parentid='__next' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='sc-1c39e262-0 fWLLZP rating-bar__base-button' parentid='__next' tag='DIV' aaname='' check:innerText='IMDb RATING&amp;#xD;&amp;#xA;7.9&amp;#xD;&amp;#xA;/10&amp;#xD;&amp;#xA;1.2M' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NGetText.Target>
+                                    </uix:NGetText>
+                                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,742" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" TemplatePath="C:\Users\Gaming PC\Downloads\MovieRatingTemplate.xlsx" WorkbookPath="C:\Users\Gaming PC\Downloads\MovieRatings.xlsx">
+                                      <ueab:ExcelApplicationCard.Body>
+                                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                          <ActivityAction.Argument>
+                                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="MovieRatingsTemplate" />
+                                          </ActivityAction.Argument>
+                                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,473" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ueab:WriteCellX AutoIncrementRow="True" Cell="[MovieRatingsTemplate.Sheet(&quot;Sheet1&quot;).Cell(&quot;A2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[Movie(&quot;MovieTitle&quot;)]" />
+                                            <ueab:WriteCellX AutoIncrementRow="True" Cell="[MovieRatingsTemplate.Sheet(&quot;Sheet1&quot;).Cell(&quot;B2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_4" Value="[strRating]" />
+                                          </Sequence>
+                                        </ActivityAction>
+                                      </ueab:ExcelApplicationCard.Body>
+                                    </ueab:ExcelApplicationCard>
+                                  </Sequence>
+                                </ActivityAction>
+                              </uix:NApplicationCard.Body>
+                              <uix:NApplicationCard.TargetApp>
+                                <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAdVJREFUWEftlDssQ1EYx69q7+2tPt2iJjERLJV4LMSgBq9OWBjaREKICBI0MZSQVEMIDQORWiRKjBUbJWHvZMUuwfy53znpfbSJ3EgwOMMv53/O7fm+X865vdzHnQ/+EibABJgAE2ACBQLHyy4ItPAwGLDCzYFEMhLqF+HlslyZI9mUVzfvauUhErbDW6YCJodsZC0+7dDVz6dAIDpmB47jwCeZ4DzuIRkRBQ5uDyVljtwn1bnHUaTkkzU3NDdYSA7L4vk9tBgWQGJTDt1cK5De8YC5mOatWacigCeXirkJ77cVul6IIQHeQgvjkeJJYEa0AleJUrBZ6SloBQRe/f3KuF3XCzEkUFNVTEarXKyu2qwU/EqgqZ4KDHeLEOwQSO5rF3S9EEMC/lozVHpNJPe00WKIkRMIB0UC5l55b34/QwKNskCbnycZ324ckXyB3PX8iAC+TJg3Z9QXUSuwNEr3Idtz6hWMyFcw0Gkl+dtXgAKrE7TxxQZdQ7QCOUwmDu6OJOUELGb12WKoRNcLKRB4OJZgL+KEZNQFjxdlJKfW3ZA99ZL8lC4nI/Kcps9z7MvgfqxzFneTtYz8MUssOGF33gmv1wb+hr8NE2ACTIAJ/HcBH3wCnyEaX70T9tEAAAAASUVORK5CYII=" InformativeScreenshot="a912ba0cbe595d5ed5d94a06206548d0.jpg" Selector="&lt;html app='chrome.exe' title='IMDb: Ratings, Reviews, and Where to Watch the Best Movies &amp;amp; TV Shows' /&gt;" Url="https://www.imdb.com/" />
+                              </uix:NApplicationCard.TargetApp>
+                            </uix:NApplicationCard>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelForEachRowX.Body>
+                    </ueab:ExcelForEachRowX>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>
